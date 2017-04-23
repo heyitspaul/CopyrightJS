@@ -7,8 +7,8 @@ that could update itself without my intervention. The main focus of CopyrightJS
 is on static HTML websites without any server-rendering backend which cuts costs
 for sites that are very simple and seldom updated.
 
-CopyrightJS currently requires a jQuery dependency, but a version without
-jQuery may be available in the future.
+CopyrightJS comes in jQuery and pure JavaScript flavors. Pure JavaScript is
+denoted by `-nojq`.
 
 Pull requests and feature requests are welcome.
 
@@ -32,4 +32,4 @@ console and leave the year as-is.
 
 It's [recommended](http://kangax.github.io/compat-table/es6/) that you use the
 transpiled and minified files available in the `dist/` folder, as the version in
-`src/` uses ES2015 syntax and features. The minified file is 381 bytes.
+`src/` uses ES2015 syntax and features. The minified jQuery-dependent version is 381 bytes, while the Pure JavaScript version is 478 bytes.
