@@ -1,0 +1,22 @@
+{
+  "name": "CopyrightJS",
+  "version": "1.0.0",
+  "description": "A little frontend JavaScript utility that will keep copyright year ranges up to date without any human intervention.",
+  "author": "TheAssailant (https://github.com/theassailant)",
+  "scripts": {
+    "build": "babel src/copyright.js --out-file dist/copyright.js --presets=es2015 && babel src/copyright.js --out-file dist/copyright.min.js --presets=es2015,babili"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheAssailant/copyrightjs"
+  },
+  "bugs": {
+    "url": "https://github.com/TheAssailant/copyrightjs/issues"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-babili": "0.0.12",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
