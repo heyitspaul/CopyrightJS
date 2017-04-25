@@ -74,7 +74,7 @@
     <hr>
 
     <div>
-      <h3>Copyright year beginning with invalid character</h3>
+      <h3>Copyright year with invalid characters</h3>
       <h4>Code:</h4>
       <code>
         &lt;p&gt;Copyright &amp;copy; &lt;span class="copyright-year"&gt;- 2016&lt;/span&gt;&lt;/p&gt;
@@ -86,23 +86,6 @@
       </code>
       <h4>Actual Result:</h4>
       <p>Copyright &copy; <span class="copyright-year">- 2016</span></p>
-    </div>
-
-    <hr>
-
-    <div>
-      <h3>Copyright year with only invalid characters</h3>
-      <h4>Code:</h4>
-      <code>
-        &lt;p&gt;Copyright &amp;copy; &lt;span class="copyright-year"&gt;afd&lt;/span&gt;&lt;/p&gt;
-      </code>
-      <h4>Expected Result:</h4>
-      <p>Copyright &copy; 2017</p>
-      <code>
-        Error: The copyright year "afd" is not a valid year. Using current year instead.
-      </code>
-      <h4>Actual Result:</h4>
-      <p>Copyright &copy; <span class="copyright-year">afd</span></p>
     </div>
 
     <hr>
