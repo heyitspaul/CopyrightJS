@@ -3,8 +3,8 @@
 (function(){
   // We want to ensure that the DOM is loaded before running our code.
   document.addEventListener("DOMContentLoaded", function(){
-    /* Despite the output of an HTMLCollection *looks* like an array, it doesn't
-     * actually function like one, so we need to perform a quick little
+    /* Despite the output of an HTMLCollection *looking* like an array, it
+     * doesn't actually function like one, so we need to perform a quick little
      * conversion into an array so we can make our lives easier.
      */
     let copyrightCollection = document.querySelectorAll(".copyright-year")
